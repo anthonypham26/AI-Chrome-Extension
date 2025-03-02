@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "AI Autocomplete",
+    "version": "1.0",
+    "description": "AI-powered autocomplete for textareas on the web",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["*://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
